@@ -1,0 +1,196 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Layout */
+main {
+  flex: 1;
+  text-align: center;
+}
+
+/* Image Grid */
+.image-grid {
+  column-count: 2;
+  column-gap: 1.5rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.image-grid img {
+  width: 90%;
+  margin: 0 auto 1.5rem;
+  display: block;
+  border-radius: 8px;
+  filter: grayscale(70%) brightness(0.9);
+  transition: filter 0.3s, transform 0.3s;
+  break-inside: avoid;
+}
+
+.image-grid img:hover {
+  filter: grayscale(0%) brightness(1.1);
+  transform: scale(1.03);
+}
+
+/* Logos */
+.vector-logo,
+.company-logo {
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.vector-logo {
+  height: 75px;
+  filter: invert(1) grayscale(75%);
+}
+
+.company-logo {
+  height: 50px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: -1.5rem 0 2rem;
+}
+
+nav a {
+  color: #4682b4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Education Section */
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+  font-family: Arial, sans-serif;
+}
+
+.education-left {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.education-right {
+  font-size: 1em;
+  color: #4682b4;
+}
+
+.school {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0.2em;
+  text-align: left;
+}
+
+/* PDF Section */
+.pdf-list,
+.contact {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.section-description {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pdf-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.pdf-list li {
+  margin-bottom: 1rem;
+}
+
+.pdf-list a,
+.contact a {
+  color: #4682b4;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pdf-list a {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact a {
+  font-weight: 400;
+}
+
+.pdf-list a:hover,
+.contact a:hover {
+  color: #fff;
+}
+
+.doc-description {
+  font-size: 0.95rem;
+  color: #bbb;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #ddd;
+}
